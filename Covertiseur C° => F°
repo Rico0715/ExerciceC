@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+ float main()
+{
+    float fahr, celsius;
+    int mini, maxi, intervalle;
+
+    mini = 0;
+    maxi= 300;
+    intervalle = 20;
+
+    fahr= mini;
+
+    printf("C°\tF°\n");
+    while (celsius <= maxi){
+        fahr = celsius * 9 / 5 + 32;
+        printf("%3.0f %6.1f\n", fahr, celsius);
+        fahr = fahr + intervalle;
+        celsius = celsius + intervalle;
+    }
+    
+}
